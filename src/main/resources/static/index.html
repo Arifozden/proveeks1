@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <title>Title</title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h1>Registrere veimeldinger</h1>
+      <form class="form">
+        <div class="form-group">
+          <label for="veistrekning">Veistrekning (f.eks E6)</label>
+          <input type="text" class="form-control" id="veistrekning" onchange="validerVeistrekning()"/>
+          <span id="feilVeistrekning" style="color: red"></span>
+        </div>
+        <div class="form-group">
+          <label for="fraSted">Fra sted</label>
+          <input type="text" class="form-control" id="fraSted"/>
+        </div>
+        <div class="form-group">
+          <label for="tilSted">Til sted</label>
+          <input type="text" class="form-control" id="tilSted"/>
+        </div>
+        <div class="form-group">
+          <label for="fraDatoTid">Fra dato/tid</label>
+          <input type="text" class="form-control" id="fraDatoTid"/>
+        </div>
+        <div class="form-group">
+          <label for="tilDatoTid">Til dato/tid</label>
+          <input type="text" class="form-control" id="tilDatoTid"/>
+        </div>
+        <div class="form-group">
+          <label for="melding">Trafikkmelding</label>
+          <textarea class="form-control" id="melding"></textarea>
+        </div>
+      </form>
+      <button class="btn btn-primary" onclick="regMelding()">Registrer trafikkmelding</button><br/>
+    </div>
+  </div>
+</div>
+</body>
+</html>
